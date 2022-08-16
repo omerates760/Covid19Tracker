@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Covid19Tracker</string>
+    <string name="menu_home">Anasayfa</string>
+    <string name="menu_history">Geçmiş</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_image">Kullanıcı Resmi</string>
+    <string name="favorite_button">Favoriye Ekle</string>
+    <string name="user_name">Kullanıcı Adı</string>
+    <string name="country_name">Türkiye</string>
+    <string name="continent">Kıta</string>
+    <string name="asia">Asya</string>
+    <string name="country">Ülke</string>
+    <string name="turkey">Türkiye</string>
+    <string name="total_test">Toplam Test</string>
+    <string name="total_test_count">1998</string>
+    <string name="daily_new_case">Günlük Vaka</string>
+    <string name="daily_new_case_count">12</string>
+    <string name="share">Paylaş</string>
+    <string name="history_statistics">Geçmiş İstatistikler</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.18" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.18" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/country/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/history/src/main/res/drawable/ic_baseline_history_24.xml" value="0.18" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/history/src/main/res/layout/fragment_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/history/src/main/res/layout/fragment_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/history/src/main/res/layout/list_item_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/drawable/ic_baseline_history_24.xml" value="0.18" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/layout/fragment_country_detail.xml" value="0.358974358974359" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/layout/fragment_user_detail.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/layout/list_item_country.xml" value="0.1859375" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/layout/list_item_user.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omera/AndroidStudioProjects/Covid19Tracker/features/home/src/main/res/menu/top_bar_menu.xml" value="0.18802083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

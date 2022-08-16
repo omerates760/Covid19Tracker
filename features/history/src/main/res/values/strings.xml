@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Search</string>
+    <string name="user_image">Kullanıcı Resmi</string>
+    <string name="user_name">Omer Ates</string>
+    <string name="user_search_title">Kullanıcı Ara</string>
+    <string name="history">Geçmiş</string>
+    <string name="country_name">Türkiye</string>
+    <string name="case_count">Vaka sayısı</string>
+    <string name="death_count">Ölü sayısı</string>
+</resources>

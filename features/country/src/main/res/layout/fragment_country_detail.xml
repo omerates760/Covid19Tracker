@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="country"
+            type="com.monofire.domain.model.CountryDetailUiData" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:menu="@menu/top_bar_menu"
+                app:title="@{country.countryName}" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/textview_continent_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/continent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_layout" />
+
+        <TextView
+            android:id="@+id/textview_continent_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:gravity="end"
+            android:text="@{country.continent}"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_continent_key"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textview_continent_key"
+            app:layout_constraintTop_toTopOf="@id/textview_continent_key"
+            tools:text="@string/asia" />
+
+        <TextView
+            android:id="@+id/textview_country_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textview_continent_key"
+            app:layout_constraintTop_toBottomOf="@id/textview_continent_key" />
+
+        <TextView
+            android:id="@+id/textview_country_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@{country.countryName}"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_country_key"
+            app:layout_constraintEnd_toEndOf="@id/textview_continent_value"
+            app:layout_constraintStart_toEndOf="@id/textview_country_key"
+            app:layout_constraintTop_toTopOf="@id/textview_country_key"
+            tools:text="@string/turkey" />
+
+        <TextView
+            android:id="@+id/textview_total_test_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_test"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textview_continent_key"
+            app:layout_constraintTop_toBottomOf="@id/textview_country_key" />
+
+        <TextView
+            android:id="@+id/textview_total_test_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@{country.totalTest}"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_total_test_key"
+            app:layout_constraintEnd_toEndOf="@id/textview_continent_value"
+            app:layout_constraintStart_toEndOf="@id/textview_total_test_key"
+            app:layout_constraintTop_toTopOf="@id/textview_total_test_key"
+            tools:text="@string/total_test_count" />
+
+        <TextView
+            android:id="@+id/textview_daily_new_case_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_new_case"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textview_continent_key"
+            app:layout_constraintTop_toBottomOf="@id/textview_total_test_key" />
+
+        <TextView
+            android:id="@+id/textview_daily_new_case_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@{country.newCase}"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_daily_new_case_key"
+            app:layout_constraintEnd_toEndOf="@id/textview_continent_value"
+            app:layout_constraintStart_toEndOf="@id/textview_daily_new_case_key"
+            app:layout_constraintTop_toTopOf="@id/textview_daily_new_case_key"
+            tools:text="@string/daily_new_case_count" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/history_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_statistics"
+            android:textSize="21sp"
+            app:icon="@drawable/ic_baseline_history_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_daily_new_case_key" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

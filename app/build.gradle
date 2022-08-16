@@ -1,0 +1,58 @@
+apply plugin: Plugins.application
+apply plugin: Plugins.kotlinAndroid
+apply plugin: Plugins.kotlinKapt
+apply plugin: Plugins.hiltAndroid
+
+android {
+    compileSdk Configs.compileSdkVersion
+
+    defaultConfig {
+        applicationId Configs.applicationId
+        minSdk Configs.minSdkVersion
+        targetSdk Configs.targetSdkVersion
+        versionCode Configs.versionCode
+        versionName Configs.versionName
+
+        testInstrumentationRunner Configs.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features:country')
+    implementation project(path: ':features:history')
+
+    implementation Dependencies.coreKtx
+    implementation Dependencies.appCompat
+    implementation Dependencies.material
+    implementation Dependencies.constraintLayout
+    // Hilt
+    implementation Dependencies.hiltAndroid
+    implementation Dependencies.hiltCompiler
+    kapt(Dependencies.hiltAndroidKapt)
+    // WorkManager
+    implementation Dependencies.hiltWorkManager
+    //arch comp
+    implementation Dependencies.lifecycleViewModel
+    implementation Dependencies.lifecycleLivedata
+    implementation Dependencies.lifecycleRuntime
+    //Navigation comp.
+    implementation Dependencies.navigationFragment
+    implementation Dependencies.navigationUi
+}

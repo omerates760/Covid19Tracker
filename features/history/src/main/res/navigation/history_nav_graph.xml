@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.monofire.history.HistoryFragment"
+        android:label="@string/history">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="android-app://com.monofire.covid19tracker/history_fragment/{countryName}/{day}" />
+        <argument
+            android:name="countryName"
+            app:argType="string" />
+        <argument
+            android:name="day"
+            app:argType="string" />
+    </fragment>
+</navigation>

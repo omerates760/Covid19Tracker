@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/country_nav_graph"
+    app:startDestination="@id/countryFragment">
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.monofire.country.CountryFragment"
+        android:label="Ülkeler">
+        <action
+            android:id="@+id/action_countryFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.monofire.country.detail.CountryDetailFragment"
+        android:label="{countryName}">
+        <argument
+            android:name="countryName"
+            app:argType="string" />
+    </fragment>
+</navigation>
